@@ -1,0 +1,1417 @@
+[
+    {
+        "id": "c18437dd2913d2e7",
+        "type": "tab",
+        "label": "FLUJO_1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2a6745d36be8af94",
+        "type": "tab",
+        "label": "FLUJO_2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8cbec445da6e26b4",
+        "type": "tab",
+        "label": "OPTOA_1_CMD_MAN",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1bb0554a7efbf96e",
+        "type": "tab",
+        "label": "OPTOA_2_CMD_AUT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a6e6fc27737a752a",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "db310f746c41644e",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6",
+            "node-red-contrib-ui-led": "0.4.11"
+        }
+    },
+    {
+        "id": "fa829b072fd2a157",
+        "type": "ui_tab",
+        "name": "INVERNADERO_1",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "65bb7dedd648634a",
+        "type": "ui_group",
+        "name": "FILAS 1 AL 5",
+        "tab": "fa829b072fd2a157",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "391a321c804bb1b1",
+        "type": "ui_group",
+        "name": "FILAS 6 AL 10",
+        "tab": "fa829b072fd2a157",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73edc3f7dfa2b8f2",
+        "type": "ui_tab",
+        "name": "INVERNADERO_2",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e193c4327d21e2bb",
+        "type": "ui_group",
+        "name": "FILAS 1 AL 5",
+        "tab": "73edc3f7dfa2b8f2",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "64f0b1f4f92a57b2",
+        "type": "ui_group",
+        "name": "FILAS 6 AL 10",
+        "tab": "73edc3f7dfa2b8f2",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27a83dbaa4398e71",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Local",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "af20dda177ef2027",
+        "type": "ui_tab",
+        "name": "OPTOACOPLADOR_1_CMD_MAN",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "321c2e6081c2544b",
+        "type": "ui_group",
+        "name": "MONITOREO_REMOTO",
+        "tab": "af20dda177ef2027",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "group_nube_bombillo",
+        "type": "ui_group",
+        "name": "HISTORIAL DEL OPTOACOPLADOR",
+        "tab": "af20dda177ef2027",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "075faec3883ab39e",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Local",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e03fc446d855c1b4",
+        "type": "ui_tab",
+        "name": "OPTOACOPLADOR_2_CMD_AUT",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_rele2_v11",
+        "type": "ui_group",
+        "name": "OPTOACOPLADOR_2_CMD_AUT",
+        "tab": "e03fc446d855c1b4",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6c27337943632e91",
+        "type": "ui_switch",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "65bb7dedd648634a",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 420,
+        "wires": [
+            [
+                "74261536f36ad28e"
+            ]
+        ]
+    },
+    {
+        "id": "b6ad5cec92c76a53",
+        "type": "ui_switch",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "391a321c804bb1b1",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "5c0d4df3168e0786"
+            ]
+        ]
+    },
+    {
+        "id": "74261536f36ad28e",
+        "type": "ui_led",
+        "z": "c18437dd2913d2e7",
+        "order": 2,
+        "group": "65bb7dedd648634a",
+        "width": "9",
+        "height": "2",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5c0d4df3168e0786",
+        "type": "ui_led",
+        "z": "c18437dd2913d2e7",
+        "order": 2,
+        "group": "391a321c804bb1b1",
+        "width": "9",
+        "height": "2",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 570,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "b0fb62425c42f98c",
+        "type": "inject",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 680,
+        "wires": [
+            [
+                "5ec2edbf71e508a3"
+            ]
+        ]
+    },
+    {
+        "id": "a2244b3d0be0831a",
+        "type": "ui_gauge",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "group": "65bb7dedd648634a",
+        "order": 3,
+        "width": "7",
+        "height": "6",
+        "gtype": "gage",
+        "title": "FORMA_GAUGE",
+        "label": "A",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "96c376fe0442bcd9",
+        "type": "ui_gauge",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "group": "65bb7dedd648634a",
+        "order": 4,
+        "width": "5",
+        "height": "6",
+        "gtype": "donut",
+        "title": "FORMA_DONA",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 620,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "54988535c28b5b9a",
+        "type": "ui_gauge",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "group": "391a321c804bb1b1",
+        "order": 5,
+        "width": "5",
+        "height": "6",
+        "gtype": "compass",
+        "title": "FORMA_COMPAS",
+        "label": "HZ",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "fa01f5e8b944be98",
+        "type": "ui_gauge",
+        "z": "c18437dd2913d2e7",
+        "name": "",
+        "group": "391a321c804bb1b1",
+        "order": 6,
+        "width": "5",
+        "height": "6",
+        "gtype": "wave",
+        "title": "FORMA_NIVEL",
+        "label": "ml",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 620,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "5ec2edbf71e508a3",
+        "type": "range",
+        "z": "c18437dd2913d2e7",
+        "minin": "1",
+        "maxin": "100",
+        "minout": "1",
+        "maxout": "10",
+        "action": "roll",
+        "round": true,
+        "property": "payload",
+        "name": "",
+        "x": 350,
+        "y": 680,
+        "wires": [
+            [
+                "a2244b3d0be0831a",
+                "96c376fe0442bcd9",
+                "54988535c28b5b9a",
+                "fa01f5e8b944be98"
+            ]
+        ]
+    },
+    {
+        "id": "d067553dfc46e7a5",
+        "type": "ui_switch",
+        "z": "2a6745d36be8af94",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "e193c4327d21e2bb",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "2935e7fea15d6311"
+            ]
+        ]
+    },
+    {
+        "id": "0566efe922c02cbb",
+        "type": "ui_switch",
+        "z": "2a6745d36be8af94",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "64f0b1f4f92a57b2",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "d698fa10ed206aa9"
+            ]
+        ]
+    },
+    {
+        "id": "2935e7fea15d6311",
+        "type": "ui_led",
+        "z": "2a6745d36be8af94",
+        "order": 1,
+        "group": "e193c4327d21e2bb",
+        "width": "6",
+        "height": "2",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 510,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d698fa10ed206aa9",
+        "type": "ui_led",
+        "z": "2a6745d36be8af94",
+        "order": 1,
+        "group": "64f0b1f4f92a57b2",
+        "width": "6",
+        "height": "2",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#008000",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5e4f9f7b4b7e5f4c",
+        "type": "ui_led",
+        "z": "8cbec445da6e26b4",
+        "order": 2,
+        "group": "321c2e6081c2544b",
+        "width": "6",
+        "height": "2",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": true,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LED_INDICADOR",
+        "x": 850,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "70a20384721b42cf",
+        "type": "ui_switch",
+        "z": "8cbec445da6e26b4",
+        "name": "",
+        "label": "ENCENDER_LED",
+        "tooltip": "",
+        "group": "321c2e6081c2544b",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 170,
+        "y": 100,
+        "wires": [
+            [
+                "e9194673e4d69411"
+            ]
+        ]
+    },
+    {
+        "id": "e9194673e4d69411",
+        "type": "mqtt out",
+        "z": "8cbec445da6e26b4",
+        "name": "comando_bombillo",
+        "topic": "nixon/esp32/bombillo/cmd",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "27a83dbaa4398e71",
+        "x": 690,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a06bd25fb7c6bd1b",
+        "type": "mqtt in",
+        "z": "8cbec445da6e26b4",
+        "name": "",
+        "topic": "nixon/esp32/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "27a83dbaa4398e71",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 180,
+        "wires": [
+            [
+                "b30c4b133f8591e8",
+                "4f67d723dd40bb64"
+            ]
+        ]
+    },
+    {
+        "id": "559ccf06da19faa4",
+        "type": "ui_text",
+        "z": "8cbec445da6e26b4",
+        "group": "321c2e6081c2544b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado ESP32",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 720,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "b30c4b133f8591e8",
+        "type": "function",
+        "z": "8cbec445da6e26b4",
+        "name": "Texto Status",
+        "func": "if (msg.payload === \"online\") {\n    msg.payload = \"🟢 ESP32 CONECTADO A INTERNET\";\n} else {\n    msg.payload = \"🔴 ESP32 DESCONECTADO\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "559ccf06da19faa4"
+            ]
+        ]
+    },
+    {
+        "id": "91e59cf3297e1261",
+        "type": "mqtt in",
+        "z": "8cbec445da6e26b4",
+        "name": "Recibir Estado",
+        "topic": "nixon/esp32/bombillo/state",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "27a83dbaa4398e71",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 300,
+        "wires": [
+            [
+                "4f67d723dd40bb64"
+            ]
+        ]
+    },
+    {
+        "id": "4f67d723dd40bb64",
+        "type": "function",
+        "z": "8cbec445da6e26b4",
+        "name": "Cerebro: Lógica + Excel + LED",
+        "func": "// VARIABLES PRINCIPALES\nvar topic = msg.topic;\nvar payload = msg.payload;\n\n// Fecha y Hora para el Excel\nvar now = new Date();\n// Ajuste simple de fecha\nvar fecha = now.toISOString().split('T')[0]; \nvar hora = now.toLocaleTimeString();\n\n// Variables de salida\nvar msgVisual = null; // Para LED y Gráfica\nvar msgCSV = null;    // Para Excel\n\n// ------------------------------------------------------\n// CASO 1: EL ESP32 SE DESCONECTÓ (Topic contiene 'status' y dice 'offline')\n// ------------------------------------------------------\nif (topic.includes(\"status\") && payload === \"offline\") {\n    \n    // 1. Forzamos el LED y la Gráfica a 0 (ROJO/APAGADO)\n    msgVisual = { payload: 0 };\n    \n    // 2. Guardamos en Excel que se desconectó\n    msgCSV = {\n        payload: {\n            fecha: fecha,\n            hora: hora,\n            estado: 0,\n            descripcion: \"⚠️ ESP32 DESCONECTADO\"\n        }\n    };\n    \n    return [msgVisual, msgCSV];\n}\n\n// ------------------------------------------------------\n// CASO 2: FUNCIONAMIENTO NORMAL (Topic es 'bombillo/state')\n// ------------------------------------------------------\nelse if (topic.includes(\"bombillo/state\")) {\n    \n    // Normalizar a 1 o 0\n    var valorNumerico = (payload == \"1\" || payload == 1 || payload == true) ? 1 : 0;\n    var texto = (valorNumerico === 1) ? \"ENCENDIDO\" : \"APAGADO\";\n    \n    // Salida para visualización (1 = Verde, 0 = Rojo)\n    msgVisual = { payload: valorNumerico };\n    \n    // Salida para Excel\n    msgCSV = {\n        payload: {\n            fecha: fecha,\n            hora: hora,\n            estado: valorNumerico,\n            descripcion: texto\n        }\n    };\n    \n    return [msgVisual, msgCSV];\n}\n\nreturn null;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 300,
+        "wires": [
+            [
+                "5e4f9f7b4b7e5f4c",
+                "cd398eb51c36133d"
+            ],
+            [
+                "aef386e667c13351"
+            ]
+        ]
+    },
+    {
+        "id": "cd398eb51c36133d",
+        "type": "ui_chart",
+        "z": "8cbec445da6e26b4",
+        "name": "Gráfica Digital",
+        "group": "group_nube_bombillo",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "ESTADO DEL OPTOACOPLADOR",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 840,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aef386e667c13351",
+        "type": "csv",
+        "z": "8cbec445da6e26b4",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "fecha,hora,estado,descripcion",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 670,
+        "y": 380,
+        "wires": [
+            [
+                "7705676df57576c8"
+            ]
+        ]
+    },
+    {
+        "id": "7705676df57576c8",
+        "type": "file",
+        "z": "8cbec445da6e26b4",
+        "name": "Guardar en Servidor",
+        "filename": "datos_bombillo.csv",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": false,
+        "encoding": "none",
+        "x": 860,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4957bd9c9dce3411",
+        "type": "file in",
+        "z": "8cbec445da6e26b4",
+        "name": "Leer del Servidor",
+        "filename": "datos_bombillo.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "70ac2b96565c1e3c"
+            ]
+        ]
+    },
+    {
+        "id": "70ac2b96565c1e3c",
+        "type": "function",
+        "z": "8cbec445da6e26b4",
+        "name": "Headers Descarga",
+        "func": "// 1. CONFIGURACIÓN\nvar csvSalida = \"sep=,\\r\\nFecha,Hora,Valor,Estado\\r\\n\";\n\n// Verificamos qué botón se oprimió leyendo el \"Topic\"\nvar modo = msg.topic; // Puede ser \"24h\" o \"todo\"\n\n// Preparamos el límite de tiempo por si acaso es modo 24h\nvar ahora = new Date();\nvar limite24h = ahora.getTime() - (24 * 60 * 60 * 1000);\n\nvar datos = msg.payload;\nif (typeof datos !== 'string') datos = String(datos);\nvar lineas = datos.split(\"\\n\");\n\n// 2. PROCESAR LÍNEA POR LÍNEA\nfor (var i = 0; i < lineas.length; i++) {\n    var linea = lineas[i].trim();\n    if (linea.length < 5) continue;\n\n    var partes = linea.split(\",\");\n\n    if (partes.length >= 2) {\n        var fRaw = partes[0];\n        var hRaw = partes[1];\n        var resto = partes.slice(2).join(\",\");\n\n        // --- A. PARSEO FECHA ---\n        var pedazosFecha = fRaw.split(/[-/]/);\n        var y = 0, m = 0, d = 0;\n\n        if (pedazosFecha[0].length === 4) {\n            y = parseInt(pedazosFecha[0]); m = parseInt(pedazosFecha[1]) - 1; d = parseInt(pedazosFecha[2]);\n        } else {\n            d = parseInt(pedazosFecha[0]); m = parseInt(pedazosFecha[1]) - 1; y = parseInt(pedazosFecha[2]);\n        }\n\n        // --- B. PARSEO HORA ---\n        var partesHora = hRaw.split(\":\");\n        var horaNum = parseInt(partesHora[0]);\n        var minNum = parseInt(partesHora[1]);\n        var secRaw = partesHora[2] || \"00\";\n        var secNum = parseInt(secRaw.replace(/\\D/g, ''));\n\n        var esPM = hRaw.toUpperCase().includes(\"PM\");\n        var esAM = hRaw.toUpperCase().includes(\"AM\");\n\n        var hora24 = horaNum;\n        if (esPM && horaNum < 12) hora24 += 12;\n        if (esAM && horaNum === 12) hora24 = 0;\n\n        // Fecha del dato\n        var fechaObj = new Date(y, m, d, hora24, minNum, secNum);\n\n        // --- C. REGLA DE LA NOCHE (Día 3 vs 4) ---\n        if (hora24 >= 19) {\n            fechaObj.setDate(fechaObj.getDate() - 1);\n        }\n\n        // --- D. LÓGICA DE DECISIÓN (AQUÍ ESTÁ EL CAMBIO) ---\n        // Solo si el botón presionado fue \"24h\", aplicamos el filtro.\n        // Si el botón fue \"todo\", este IF se ignora y pasa todo.\n        if (modo === \"24h\") {\n            if (fechaObj.getTime() < limite24h) {\n                continue; // Es muy viejo, lo saltamos\n            }\n        }\n\n        // --- E. RECONSTRUCCIÓN FINAL ---\n\n        // Fecha\n        var diaNew = (\"0\" + fechaObj.getDate()).slice(-2);\n        var mesNew = (\"0\" + (fechaObj.getMonth() + 1)).slice(-2);\n        var anioNew = fechaObj.getFullYear();\n        fRaw = diaNew + \"/\" + mesNew + \"/\" + anioNew;\n\n        // Hora (Formato militar con segundos)\n        var hFinal = (\"0\" + hora24).slice(-2);\n        var mFinal = (\"0\" + minNum).slice(-2);\n        var sFinal = (\"0\" + secNum).slice(-2);\n        hRaw = hFinal + \":\" + mFinal + \":\" + sFinal;\n\n        // Estado\n        if (resto.includes(\"ESP32\") || resto.includes(\"DESCONECTADO\")) {\n            var valorSolo = resto.split(\",\")[0];\n            resto = valorSolo + \",ESP32 DESCONECTADO\";\n        }\n\n        csvSalida += fRaw + \",\" + hRaw + \",\" + resto + \"\\r\\n\";\n    }\n}\n\nmsg.payload = csvSalida;\n\n// Cambiamos el nombre del archivo según lo que pediste\nvar nombreArchivo = (modo === \"24h\") ? \"reporte_24h.csv\" : \"reporte_historial_completo.csv\";\n\nmsg.headers = {\n    \"Content-Type\": \"text/csv\",\n    \"Content-Disposition\": \"attachment; filename=\" + nombreArchivo\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 460,
+        "wires": [
+            [
+                "2c235085e193f6d7"
+            ]
+        ]
+    },
+    {
+        "id": "53bfc7d60e1b57b0",
+        "type": "ui_button",
+        "z": "8cbec445da6e26b4",
+        "name": "Solo 24 Horas",
+        "group": "group_nube_bombillo",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "⏳ Descargar Últimas 24h",
+        "tooltip": "Descarga solo lo de ayer y hoy",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "24h",
+        "topicType": "str",
+        "x": 100,
+        "y": 420,
+        "wires": [
+            [
+                "4957bd9c9dce3411"
+            ]
+        ]
+    },
+    {
+        "id": "5851279dded01b2e",
+        "type": "ui_button",
+        "z": "8cbec445da6e26b4",
+        "name": "Todo el Historial",
+        "group": "group_nube_bombillo",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "📂 Descargar TODO",
+        "tooltip": "Descarga el historial completo",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "todo",
+        "topicType": "str",
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "4957bd9c9dce3411"
+            ]
+        ]
+    },
+    {
+        "id": "2c235085e193f6d7",
+        "type": "change",
+        "z": "8cbec445da6e26b4",
+        "name": "Generar ID Único",
+        "rules": [
+            {
+                "t": "set",
+                "p": "download_id",
+                "pt": "msg",
+                "to": "$millis()",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 460,
+        "wires": [
+            [
+                "de5514a10811a0ab"
+            ]
+        ]
+    },
+    {
+        "id": "de5514a10811a0ab",
+        "type": "ui_template",
+        "z": "8cbec445da6e26b4",
+        "group": "group_nube_bombillo",
+        "name": "Template",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n(function(scope) {\n    scope.$watch('msg', function(msg) {\n        // 1. VALIDACIONES DE SEGURIDAD\n        if (!msg || !msg.payload) return;\n\n        // REGLA DE ORO: TIEMPO (3 SEGUNDOS)\n        // Si el mensaje se creó hace más de 3 segundos, es basura vieja.\n        var timeNow = Date.now();\n        var timeMsg = msg.download_id || 0;\n        \n        if ((timeNow - timeMsg) > 3000) {\n            console.log(\"Descarga bloqueada: Mensaje expirado (Intento de recarga)\");\n            return;\n        }\n\n        // 2. PROCESO DE DESCARGA\n        try {\n            var csv = msg.payload;\n            var filename = \"reporte.csv\";\n            \n            if (msg.headers && msg.headers[\"Content-Disposition\"]) {\n                var split = msg.headers[\"Content-Disposition\"].split(\"filename=\");\n                if (split.length > 1) {\n                    filename = split[1];\n                }\n            }\n\n            var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });\n            var url = URL.createObjectURL(blob);\n            var link = document.createElement(\"a\");\n            \n            link.setAttribute(\"href\", url);\n            link.setAttribute(\"download\", filename);\n            link.style.visibility = 'hidden';\n            \n            document.body.appendChild(link);\n            link.click();\n            \n            setTimeout(function() {\n                document.body.removeChild(link);\n                window.URL.revokeObjectURL(url);\n            }, 100);\n            \n        } catch (e) {\n            console.log(\"Error descarga\", e);\n        }\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 940,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2a6b82bbd03bf95",
+        "type": "mqtt in",
+        "z": "1bb0554a7efbf96e",
+        "name": "Saber si hay conexión",
+        "topic": "nixon/esp32/status",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "075faec3883ab39e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "363596e8c377327b"
+            ]
+        ]
+    },
+    {
+        "id": "79c816a3ef328ea7",
+        "type": "ui_text_input",
+        "z": "1bb0554a7efbf96e",
+        "name": "Hora Inicio",
+        "label": "🟢 ENCENDER A LAS:",
+        "tooltip": "",
+        "group": "group_rele2_v11",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "start",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 670,
+        "y": 420,
+        "wires": [
+            [
+                "65a2facd99375d44",
+                "d6f814e367edc0d0"
+            ]
+        ]
+    },
+    {
+        "id": "482456770559131e",
+        "type": "ui_text_input",
+        "z": "1bb0554a7efbf96e",
+        "name": "Hora Fin",
+        "label": "🔴 APAGAR A LAS:",
+        "tooltip": "",
+        "group": "group_rele2_v11",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "time",
+        "delay": 300,
+        "topic": "end",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 680,
+        "y": 480,
+        "wires": [
+            [
+                "92e1d44e08941213",
+                "d6f814e367edc0d0"
+            ]
+        ]
+    },
+    {
+        "id": "2860be05d1be9b0a",
+        "type": "ui_text",
+        "z": "1bb0554a7efbf96e",
+        "group": "group_rele2_v11",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "🕒 HORA ACTUAL:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 20,
+        "color": "#000080",
+        "x": 700,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9392e66c79e052ce",
+        "type": "ui_text",
+        "z": "1bb0554a7efbf96e",
+        "group": "group_rele2_v11",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "ESTADO DEL RELÉ:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 22,
+        "color": "#000000",
+        "x": 700,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "049d7417ffcc7eba",
+        "type": "mqtt out",
+        "z": "1bb0554a7efbf96e",
+        "name": "Enviar a ESP32",
+        "topic": "nixon/esp32/programado/cmd",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "075faec3883ab39e",
+        "x": 680,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "0b86c2c8b3b0da94",
+        "type": "inject",
+        "z": "1bb0554a7efbf96e",
+        "name": "Reloj (2 seg)",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 400,
+        "wires": [
+            [
+                "363596e8c377327b"
+            ]
+        ]
+    },
+    {
+        "id": "363596e8c377327b",
+        "type": "function",
+        "z": "1bb0554a7efbf96e",
+        "name": "Cerebro V11 (Solo Auto)",
+        "func": "// 1. GESTIÓN DE CONEXIÓN\nif (msg.topic === \"nixon/esp32/status\") {\n    flow.set(\"esp32_online\", (msg.payload === \"online\"));\n}\nvar isOnline = flow.get(\"esp32_online\") || false;\n\n// 2. HORA COLOMBIA\nvar now = new Date();\nvar utc = now.getTime() + (now.getTimezoneOffset() * 60000);\nvar offset = -5;\nvar colDate = new Date(utc + (3600000 * offset));\n\nvar h = colDate.getHours();\nvar m = colDate.getMinutes();\nvar s = colDate.getSeconds();\nvar horaServidorStr = (h<10?\"0\":\"\")+h + \":\" + (m<10?\"0\":\"\")+m + \":\" + (s<10?\"0\":\"\")+s;\nvar currentTotalMins = (h * 60) + m;\n\n// 3. RECUPERAR DATOS\nvar startInput = flow.get(\"horaInicio11\");\nvar endInput = flow.get(\"horaFin11\");\nvar forceUpdateUI = false;\n\nif (!startInput) {\n    startInput = \"18:00\"; \n    flow.set(\"horaInicio11\", startInput);\n    forceUpdateUI = true;\n}\nif (!endInput) {\n    endInput = \"06:00\"; \n    flow.set(\"horaFin11\", endInput);\n    forceUpdateUI = true;\n}\n\n// 4. PARSEADOR\nfunction parseTime(input) {\n    if (!input) return -1;\n    if (typeof input === 'number') return Math.floor(input / 60000);\n    var sStr = input.toString().toLowerCase().trim();\n    var clean = sStr.replace(/[^0-9:]/g, \"\");\n    var parts = clean.split(\":\");\n    if (parts.length < 2) return -1;\n    var pH = parseInt(parts[0]);\n    var pM = parseInt(parts[1]);\n    return (pH * 60) + pM;\n}\n\n// 5. LÓGICA DE CONTROL\nvar startMins = parseTime(startInput);\nvar endMins = parseTime(endInput);\nvar isActive = false;\n\nif (startMins !== -1 && endMins !== -1) {\n    if (startMins < endMins) {\n        if (currentTotalMins >= startMins && currentTotalMins < endMins) isActive = true;\n    } else {\n        if (currentTotalMins >= startMins || currentTotalMins < endMins) isActive = true;\n    }\n}\n\n// 6. SALIDAS CONDICIONADAS POR CONEXIÓN\nvar command = isActive ? \"1\" : \"0\";\nvar statusText = \"\";\n\nif (!isOnline) {\n    statusText = \"⚠️ DESCONECTADO\";\n} else {\n    statusText = isActive ? \"🟢 ENCENDIDO\" : \"🔴 APAGADO\";\n}\n\nreturn [\n    { payload: command },\n    { payload: horaServidorStr }, \n    forceUpdateUI ? { payload: startInput } : null, \n    forceUpdateUI ? { payload: endInput } : null, \n    { payload: statusText }      \n];",
+        "outputs": 5,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "049d7417ffcc7eba"
+            ],
+            [
+                "2860be05d1be9b0a"
+            ],
+            [
+                "79c816a3ef328ea7"
+            ],
+            [
+                "482456770559131e"
+            ],
+            [
+                "9392e66c79e052ce"
+            ]
+        ]
+    },
+    {
+        "id": "65a2facd99375d44",
+        "type": "change",
+        "z": "1bb0554a7efbf96e",
+        "name": "Guardar Inicio",
+        "rules": [
+            {
+                "t": "set",
+                "p": "horaInicio11",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 900,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92e1d44e08941213",
+        "type": "change",
+        "z": "1bb0554a7efbf96e",
+        "name": "Guardar Fin",
+        "rules": [
+            {
+                "t": "set",
+                "p": "horaFin11",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6f814e367edc0d0",
+        "type": "function",
+        "z": "1bb0554a7efbf96e",
+        "name": "Actualizar Ya",
+        "func": "return { payload: \"check\" };",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 210,
+        "y": 480,
+        "wires": [
+            [
+                "363596e8c377327b"
+            ]
+        ]
+    }
+]
